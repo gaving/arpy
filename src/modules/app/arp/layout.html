@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>ARP Table</h1>
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+        <td>Host</td>
+        <td>IP</td>
+        <td>Mac</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="entry in entries">
+        <td><strong>{{ entry.host }}</strong></td>
+        <td><tt>{{ entry.ip }}</tt></td>
+        <td><tt>{{ entry.mac }}</tt></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
