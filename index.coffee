@@ -15,5 +15,10 @@ server.get '/arp', (req, res, next) ->
       arp.push(host: host, ip: ip, mac: mac) if host
     res.send(arp)
 
+server.del '/arp/:host', (req, res, next) ->
+  exec "arp -d #{req.params.host}", (error, stdout, stderr) ->
+    res.send 200 if stdout.match(/deleted/)
+    res.send 500 if error
+
 server.listen 3000, ->
   console.log 'Listening on port 3000'
