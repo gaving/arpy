@@ -8,6 +8,7 @@ var coffeeify = require('coffeeify');
 
 module.exports = gulp.task('browserify', function () {
   return browserify({
+      cache: {}, packageCache: {}, fullPaths: true,
       entries: [config.paths.src.modules],
       extensions: ['.coffee']
     })
