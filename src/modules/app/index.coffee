@@ -6,4 +6,5 @@ module.exports = angular.module('warp', [
   require('../../../tmp/templates').name
   require('../common/index').name
   require('./arp/index').name
+  require('./modal/index').name
 ])

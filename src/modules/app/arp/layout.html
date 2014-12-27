@@ -12,7 +12,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="entry in entries" ng-animate="'animate'">
+      <tr ng-repeat="entry in entries" ng-animate="'animate'" ng-click="open(entry)">
         <td><strong>{{ entry.host }}</strong></td>
         <td><tt>{{ entry.ip }}</tt></td>
         <td><tt>{{ entry.mac }}</tt></td>
