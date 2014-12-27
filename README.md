@@ -4,4 +4,4 @@ Web front-end for `arp(8)`
 
 ## Todo
 
-- Delete entry
+- Show port info with nmap

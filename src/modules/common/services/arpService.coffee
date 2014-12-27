@@ -2,4 +2,3 @@
 
 ### @ngInject ###
 module.exports = ->
-  {}
