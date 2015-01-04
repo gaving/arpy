@@ -21,15 +21,10 @@ module.exports = ($scope, $http, $location, $timeout, $modal) ->
     )
 
   $scope.open = (entry) ->
-    modalInstance = $modal.open(
+    modalInstance = $modal.open
       templateUrl: 'app/modal/modal.html'
       controller: "modalController"
       size: 'lg'
       resolve:
         entry: ->
           entry
-    )
-    modalInstance.result.then ((selectedItem) ->
-      $scope.selected = selectedItem
-    ), ->
-      $log.info "Modal dismissed at: " + new Date()
