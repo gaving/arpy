@@ -8,7 +8,6 @@ module.exports = ($scope, $http, $location, $modalInstance, entry) ->
 
   $http.get(api).success((data) ->
     $scope.entries = data.ports
-    console.log(data)
   ).error((data, status, headers, config) ->
     console.log data
   )
