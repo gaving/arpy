@@ -1,3 +1,3 @@
 'use strict'
 
-module.exports = angular.module('warp.common.filters', [])
+module.exports = angular.module('arpy.common.filters', [])

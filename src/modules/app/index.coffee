@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports = angular.module('warp', [
+module.exports = angular.module('arpy', [
   'ui.bootstrap'
   'ui.router'
   require('../../../tmp/templates').name

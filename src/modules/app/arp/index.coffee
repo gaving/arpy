@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports = angular.module('warp.arp', ['warp.common.services'])
+module.exports = angular.module('arpy.arp', ['arpy.common.services'])
     .config(($stateProvider) ->
       $stateProvider.state 'arp',
       url: ''

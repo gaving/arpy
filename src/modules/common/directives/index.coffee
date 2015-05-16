@@ -1,3 +1,3 @@
 'use strict'
 
-module.exports = angular.module('warp.common.directives', [])
+module.exports = angular.module('arpy.common.directives', [])
